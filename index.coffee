@@ -59,7 +59,7 @@ module.exports =
       default: ''
 
   activate: ->
-    prefix = 'linter-scss-lint.'
+    prefix = 'linter-scss-lint-caseywebdev.'
     @subscriptions = new CompositeDisposable
     @subscriptions.add atom.config.observe "#{prefix}executablePath",
       (executablePath) => @executablePath = executablePath
